@@ -12,7 +12,236 @@ body {
 }
 
 img {
+    margin-top: 20px;
     max-width: 100%; /* Afbeeldingen responsive maken */
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 /* Voeg jouw css hieraan toe */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/*font-size according to golden ratio*/
+
+html {font-size: 1em;}
+
+body {
+  font-family: Open Sans;
+  font-weight: normal;
+  line-height: 1.45;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+    font-family: Open Sans;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.854em;
+}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+.caption {
+    font-size: 0.872em;
+    font-style: italic;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    width: 1920px;
+    height: 1080;
+    align-items: top;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: flex-start;
+
+}
+
+.colors {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.buttons {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.logo {
+    display:flex;
+    flex: 2;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.image-examples {
+    display:flex;
+    flex: 4;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.image-examples img:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    opacity: 0.8;
+}
+
+.typo {
+    display:flex;
+    flex: 10;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.colors > div {
+    color: #FFFFFF;
+    width: 160px;
+    height: 90px;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    text-align: left;
+    border-radius: 10px;
+
+}
+
+#col1 {
+    background-color: #4CD6BB
+}
+
+#col2{
+    background-color: #FFC25B;
+}
+  
+#col3{
+    background-color: #FA596F;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    transition: all 0.8s;
+    cursor: pointer;
+    }
+    
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.8s;
+}
+    
+.button span:after {
+    content: '►';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.8s;
+}
+    
+.button:hover {
+    background: #555;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+
+.button:hover span {
+    padding-right: 20px;
+    }
+    
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.playfair-title > div p{
+    margin: auto;
+    font-family: Playfair Display;
+    font-weight: bold;
+    line-height: auto;
+}
+
+#title > p{
+    font-size: 6.854em;
+}
+
+#title2 > p{
+    font-size: 4.236em;
+}
+
+#title3 > p{
+    font-size: 2.618em;
+}
+
+#title4 > p{
+    font-size: 1.618em;
+}
+
+.opensans-paragraph > div {
+    margin: 1.414em 0 0.5em;
+    font-family: Open Sans;
+    font-weight: normal;
+    line-height: 1.2;
+}
+/* shadow button
+
+*/
+
+/*
+COLOR NAMES
+
+HEX #4CD6BB - Primary blue
+RGB 76 214 187
+HSL 168° 63% 57%
+HEX #FFC25B - Secondary yellow
+RGB 255 194 91
+HSL 38° 100% 68%
+HEX # FA596F - Secondary Red
+RGB 250 89 111
+HSL 352° 94% 66%
+
+
+*/
+
+.concurrentie{
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.intro{
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
