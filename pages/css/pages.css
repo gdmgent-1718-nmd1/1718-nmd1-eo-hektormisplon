@@ -245,3 +245,10 @@ HSL 352° 94% 66%
     flex-direction: column;
     padding: 20px;
 }
+
+.scenarios{
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
